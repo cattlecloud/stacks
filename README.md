@@ -1,8 +1,9 @@
 stacks
 ======
 
-[![Go Reference](https://pkg.go.dev/badge/noxideproject/stacks.svg)](https://pkg.go.dev/noxideproject/stacks)
-[![GitHub](https://img.shields.io/github/license/noxideproject/stacks.svg)](LICENSE)
+[![Go Reference](https://pkg.go.dev/badge/noxide.lol/go/stacks.svg)](https://pkg.go.dev/noxide.lol/go/stacks)
+[![License](https://img.shields.io/github/license/noxideproject/stacks?color=7C00D8&style=flat-square&label=License)](https://github.com/noxideproject/stacks/blob/main/LICENSE)
+[![Build](https://img.shields.io/github/actions/workflow/status/noxideproject/stacks/ci.yaml?style=flat-square&color=0FAA07&label=Tests)](https://github.com/noxideproject/stacks/actions/workflows/ci.yaml)
 
 Multiple implementations of a generic Stack data structure for optimizing by
 varioius use cases.
