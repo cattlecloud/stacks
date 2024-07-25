@@ -29,4 +29,4 @@ jobs:
           args: --config .github/workflows/scripts/golangci.yaml
       - name: Run Go Test
         run: |
-          go test -v -race ./...
+          make test
