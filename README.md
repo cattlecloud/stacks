@@ -1,9 +1,9 @@
 stacks
 ======
 
-[![Go Reference](https://pkg.go.dev/badge/noxide.lol/go/stacks.svg)](https://pkg.go.dev/noxide.lol/go/stacks)
-[![License](https://img.shields.io/github/license/noxideproject/stacks?color=7C00D8&style=flat-square&label=License)](https://github.com/noxideproject/stacks/blob/main/LICENSE)
-[![Build](https://img.shields.io/github/actions/workflow/status/noxideproject/stacks/ci.yaml?style=flat-square&color=0FAA07&label=Tests)](https://github.com/noxideproject/stacks/actions/workflows/ci.yaml)
+[![Go Reference](https://pkg.go.dev/badge/cattlecloud.net/go/stacks.svg)](https://pkg.go.dev/cattlecloud.net/go/stacks)
+[![License](https://img.shields.io/github/license/cattlecloud/stacks?color=7C00D8&style=flat-square&label=License)](https://github.com/cattlecloud/stacks/blob/main/LICENSE)
+[![Build](https://img.shields.io/github/actions/workflow/status/cattlecloud/stacks/ci.yaml?style=flat-square&color=0FAA07&label=Tests)](https://github.com/cattlecloud/stacks/actions/workflows/ci.yaml)
 
 `stacks` provides multiple implementations of a generic Stack data structure for
 optimizing by varioius use cases.
@@ -18,7 +18,7 @@ stack (noun):
 The `stacks` package can be added to a Go project with `go get`.
 
 ```shell
-go get noxide.lol/go/stacks@latest
+go get cattlecloud.net/go/stacks@latest
 ```
 
 # Examples
@@ -79,4 +79,4 @@ size := s.Size()
 
 # License
 
-The `noxide.lol/go/stacks` module is opensource under the [BSD-3-Clause](LICENSE) license.
+The `cattlecloud.net/go/stacks` module is opensource under the [BSD-3-Clause](LICENSE) license.
