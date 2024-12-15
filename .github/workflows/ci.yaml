@@ -1,5 +1,12 @@
 name: Run CI Tests
-on: [pull_request]
+on:
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+  push:
+    branches:
+      - 'main'
 jobs:
   run-copywrite:
     timeout-minutes: 5
@@ -15,18 +22,16 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - uses: extractions/setup-just@v2
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
           cache-dependency-path: '**/go.sum'
-      - name: Run Go Vet
-        run: |
-          go vet ./...
       - uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.59.1
+          version: v1.62.2
           skip-cache: true
           args: --config .github/workflows/scripts/golangci.yaml
       - name: Run Go Test
         run: |
-          make test
+          just test
