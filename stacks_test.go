@@ -10,6 +10,8 @@ import (
 )
 
 func TestBasic(t *testing.T) {
+	t.Parallel()
+
 	t.Run("simple", func(t *testing.T) {
 		basicTest(t, Simple[int]())
 	})
@@ -60,6 +62,8 @@ func basicTest(t *testing.T, s Stack[int]) {
 }
 
 func TestPopEmpty(t *testing.T) {
+	t.Parallel()
+
 	t.Run("simple", func(t *testing.T) {
 		s := Simple[int]()
 		emptyTest(t, s, s.Pop)
@@ -72,6 +76,8 @@ func TestPopEmpty(t *testing.T) {
 }
 
 func TestPeekEmpty(t *testing.T) {
+	t.Parallel()
+
 	t.Run("simple", func(t *testing.T) {
 		s := Simple[int]()
 		emptyTest(t, s, s.Peek)
@@ -100,6 +106,8 @@ func emptyTest[T any](t *testing.T, s Stack[int], f func() T) {
 }
 
 func TestInitial(t *testing.T) {
+	t.Parallel()
+
 	t.Run("simple", func(t *testing.T) {
 		s := Simple(1, 2, 3)
 		initTest(t, s)
