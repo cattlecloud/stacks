@@ -6,6 +6,7 @@ linters:
    - asciicheck
    - bidichk
    - bodyclose
+   - copyloopvar
    - dogsled
    - dupword
    - durationcheck
@@ -13,7 +14,6 @@ linters:
    - errname
    - errorlint
    - exhaustive
-   - exportloopref
    - gochecknoinits
    - gocritic
    - gofmt
@@ -25,6 +25,7 @@ linters:
    - musttag
    - nilnil
    - noctx
+   - paralleltest
    - perfsprint
    - prealloc
    - predeclared
@@ -38,3 +39,8 @@ linters:
    - unused
    - whitespace
 
+linters-settings:
+  paralleltest:
+    ignore-missing-subtests: true
+  exhaustive:
+    default-signifies-exhaustive: true

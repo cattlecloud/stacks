@@ -1,6 +1,6 @@
-module noxide.lol/go/stacks
+module cattlecloud.net/go/stacks
 
-go 1.22
+go 1.23
 
 require github.com/shoenig/test v1.8.2
 
