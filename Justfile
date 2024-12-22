@@ -33,5 +33,14 @@ vet:
 # apply golangci-lint linters on source tree
 [group('lint')]
 lint: vet
-    golangci-lint run --config .github/workflows/scripts/golangci.yaml
+    $GOBIN/golangci-lint run --config .github/workflows/scripts/golangci.yaml
 
+# locally install build dependencies
+[group('build')]
+init:
+    go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.62.2
+
+# show host system information
+[group('build')]
+@sysinfo:
+    echo "{{os()/arch()}} {{num_cpus()}}c"
